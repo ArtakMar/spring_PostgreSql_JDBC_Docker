@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Тестовое задание              
 С использованием фреймворка Spring необходимо разработать сервис для конвертации валют и сбора статистики операций.
 API: /exchange, /stats
@@ -68,3 +69,6 @@ curl -X GET "http://localhost:8080/stats?allExchange=true&currencyAmount=10000&c
 
 popularDestination true
 curl -X POST "http://localhost:8080/stats?popularDestination=true" -H "accept: */*"
+=======
+# spring_PostgreSql_JDBC_Docker
+>>>>>>> 3ec94f2211261b0411cf34307fb95b27fb9b78d1
