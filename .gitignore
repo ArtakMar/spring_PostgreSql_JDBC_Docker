@@ -1,13 +1,7 @@
-
-
-
-### IntelliJ IDEA ###
-.idea
+*.idea
 *.iws
 *.iml
 *.ipr
+/.mvn
+/target
 
-
-
-### VS Code ###
-.vscode/
