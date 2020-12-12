@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Тестовое задание              
 С использованием фреймворка Spring необходимо разработать сервис для конвертации валют и сбора статистики операций.
 API: /exchange, /stats
@@ -45,7 +45,7 @@ tar.gz архив со сделанным заданием содержит:
 
 ## Описание API
 Документация введется при помощи Swagger
-Запустите приложение и перейдите [http://localhost:8080/swagger-ui.html]
+Запустите приложение и перейдите http://localhost:8080/swagger-ui.html
 
 
 ## Скрипт с тестовыми запросами на /exchange.
@@ -69,6 +69,5 @@ curl -X GET "http://localhost:8080/stats?allExchange=true&currencyAmount=10000&c
 
 popularDestination true
 curl -X POST "http://localhost:8080/stats?popularDestination=true" -H "accept: */*"
-=======
-# spring_PostgreSql_JDBC_Docker
->>>>>>> 3ec94f2211261b0411cf34307fb95b27fb9b78d1
+
+
