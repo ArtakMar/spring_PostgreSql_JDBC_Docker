@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+
+  postgres:
+    image: "postgres:9.6"
+    container_name: postgres
+    volumes:
+      - data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+    environment:
+      - POSTGRES_DB=exchanger
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+
+  app:
+    build: .
+    container_name: app
+
+    environment:
+      - JDBC_DATABASE_USERNAME=postgres
+      - JDBC_DATABASE_PASSWORD=postgres
+      - JDBC_DATABASE_URL=jdbc:postgresql://postgres:5432/exchanger
+    ports:
+      - 8080:8080
+    links:
+      - postgres
+#  command: -"./wait-for-it.sh", "db:5432", "--", "./EXECUTABLE"
+volumes:
+  data:
